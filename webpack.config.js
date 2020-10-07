@@ -17,7 +17,7 @@ module.exports = ({ mode = "production" }) => {
         app: path.resolve(__dirname, "src", "app.js"),
       },
       output: {
-        filename: "[contentHash].bundle.js",
+        filename: "[hash].bundle.js",
         path: path.resolve(__dirname, "dist"),
         publicPath: "/",
       },

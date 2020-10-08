@@ -1,0 +1,29 @@
+.button {
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 1.2rem 2.4rem;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.3s;
+}
+
+.primary-button {
+  background-color: var(--brightRed);
+  color: var(--vary-Light-Gray);
+}
+
+.primary-button:hover {
+  box-shadow: 0rem 0.8rem 0.9rem 0rem var(--brightRed-transparent);
+  background-color: var(--brightRed-ligth);
+}
+
+.secundary-button {
+  background-color: var(--vary-Light-Gray);
+  color: var(--brightRed);
+}
+
+.secundary-button:hover {
+  box-shadow: 0rem 0.8rem 0.9rem 0rem var(--vary-Light-Gray-transparent);
+  background-color: var(--vary-Light-Gray-dark);
+}

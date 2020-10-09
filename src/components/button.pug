@@ -1,0 +1,9 @@
+mixin button(text, variant)
+  button.button(type="button" class= `${variant}-button`)= text
+
+
+//- Asi se incluye el componente
+
+//- include ./components/button.pug
+//-         +button('Go', 'primary')
+//-         +button('Get Started', 'secondary')

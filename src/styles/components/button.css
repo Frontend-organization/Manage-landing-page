@@ -18,12 +18,12 @@
   background-color: var(--brightRed-ligth);
 }
 
-.secundary-button {
+.secondary-button {
   background-color: var(--vary-Light-Gray);
   color: var(--brightRed);
 }
 
-.secundary-button:hover {
+.secondary-button:hover {
   box-shadow: 0rem 0.8rem 0.9rem 0rem var(--vary-Light-Gray-transparent);
   background-color: var(--vary-Light-Gray-dark);
 }

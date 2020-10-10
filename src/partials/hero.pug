@@ -1,0 +1,14 @@
+include ../components/button.pug
+-const heroBackgroundImage = require("@/assets/images/bg-tablet-pattern.svg")
+-const heroImages = require("@/assets/images/illustration-intro.svg")
+
+section.Hero
+    figure.Hero__background
+        img(src=heroBackgroundImage, alt="hero-bg")
+    .Hero__content
+        .Hero__text
+            h1 Bring everyone together to build better products
+            p Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger goals in view 
+            +button('Get started','primary')
+        figure.Hero__images
+            img(src=heroImages, alt="hero-ilustrations")

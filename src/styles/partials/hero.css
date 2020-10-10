@@ -1,0 +1,79 @@
+.Hero {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+.Hero__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 8rem 1.2rem 3rem 1.2rem;
+  width: 100%;
+}
+
+.Hero__background {
+  transform: scale(1.6);
+  top: 0;
+  right: -6rem;
+  width: 80vw;
+  max-width: 40rem;
+  position: absolute;
+}
+
+.Hero__background img,
+.Hero__images img {
+  width: 100%;
+}
+
+.Hero__text {
+  font-family: "Be Vietnam", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Hero__text,
+.Hero__images {
+  font-size: 2.5rem;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+.Hero__images {
+  max-width: 40rem;
+}
+
+.Hero__text h1 {
+  color: var(--dark-Blue);
+}
+
+.Hero__text p {
+  color: var(--dark-Grayish-Blue);
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .Hero__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 3rem 4.5rem 3rem;
+  }
+
+  .Hero__text {
+    text-align: left;
+    width: 74%;
+    max-width: 55rem;
+  }
+  .Hero__text h1 {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
+  .Hero__text p {
+    font-size: 2.4rem;
+  }
+}

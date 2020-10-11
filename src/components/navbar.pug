@@ -1,16 +1,18 @@
 include ./button.pug
 
 nav.navigation
-  figure.navigation__img-container
-    img.navigation__logo(src=require('@/assets/images/logo.svg'), alt="")
-  div.navigation__background
-    ul.navigation__list-item
-      li: a(href="#") Pricing
-      li: a(href="#") Product
-      li: a(href="#") About Us
-      li: a(href="#") Careers
-      li: a(href="#") Community
-  button.navigation__button(type="button")
-    figure
-      img.navigation__hamburger(src=require('@/assets/images/icon-hamburger.svg'), alt="")
-  +button('Get Started', 'primary')
+  div.navigation__content
+    figure.navigation__img-container
+      img.navigation__logo(src=require('@/assets/images/logo.svg'), alt="")
+    div.navigation__background
+      ul.navigation__list-item
+        li: a(href="#") Pricing
+        li: a(href="#") Product
+        li: a(href="#") About Us
+        li: a(href="#") Careers
+        li: a(href="#") Community
+    button.navigation__button(type="button")
+      figure
+        img.navigation__hamburger-close(src=require('@/assets/images/icon-close.svg'), alt="close")
+        img.navigation__hamburger(src=require('@/assets/images/icon-hamburger.svg'), alt="hamburguer")
+    +button('Get Started', 'primary')

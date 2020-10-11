@@ -1,5 +1,6 @@
 /*COMPONENTS*/
 @import "./components/button.css";
+@import "./components/navbar.css";
 
 /*PARTIALS*/
 @import "./partials/hero.css";

@@ -1,7 +1,7 @@
 /*COMPONENTS*/
 @import "./components/button.css";
 @import "./components/navbar.css";
-@import "./components/about.css";
 
 /*PARTIALS*/
 @import "./partials/hero.css";
+@import "./partials/about.css";

@@ -62,3 +62,42 @@ ESTILOS GENERALES
   color: var(--dark-Grayish-Blue);
   line-height: 2.5rem;
 }
+
+@media only screen and (min-width: 768px) {
+  .about {
+    display: flex;
+  }
+
+  .about__introduccion {
+    width: 44%;
+    text-align: left;
+  }
+
+  .about__introduccion-title {
+    padding: 0 10rem;
+  }
+
+  .about__introduccion-text {
+    padding: 0 10rem;
+  }
+
+  .about__list {
+    width: 50%;
+  }
+
+  .about__list-title {
+    background-color: initial;
+    border-radius: initial;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .about__list-title h3 {
+    margin-left: -10rem;
+  }
+
+  .about__list-description {
+    padding-left: 24rem;
+  }
+}

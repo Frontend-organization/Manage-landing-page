@@ -33,6 +33,7 @@ ESTILOS GENERALES
 /*-----------------------------------------------*/
 .about {
   width: 100%;
+  max-width: 128rem;
   padding: 5rem 0;
 }
 
@@ -51,6 +52,10 @@ ESTILOS GENERALES
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 4rem 0;
+}
+
+.about__list-title h3 {
+  font-size: 1.4rem;
 }
 
 .about__list-card {
@@ -83,6 +88,7 @@ ESTILOS GENERALES
 
   .about__list {
     width: 50%;
+    margin: 0;
   }
 
   .about__list-title {

@@ -26,3 +26,7 @@ ol,
 li {
   list-style: none;
 }
+
+body {
+  font-family: "Be Vietnam", sans-serif;
+}

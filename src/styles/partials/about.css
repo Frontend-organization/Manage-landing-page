@@ -2,108 +2,135 @@
 ESTILOS GENERALES
 ------------------------------------------------
 */
-.title {
-  color: var(--dark-Blue);
-  font-weight: bold;
-}
-
-.description {
-  color: var(--dark-Grayish-Blue);
-  font-size: 1.6rem;
-}
-
-.site__badge {
-  border-radius: 2rem;
-  font-weight: 700;
-  padding: 1.2rem 2.6rem;
-  background-color: var(--brightRed);
-  color: var(--vary-Light-Gray);
-}
-
-.about__list-title {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.5rem;
-  background-color: #ffefea;
-  border-radius: 2rem 0rem 0rem 2rem;
-  border: 0px solid #ffefea;
-}
-/*-----------------------------------------------*/
 .about {
   width: 100%;
-  max-width: 128rem;
-  padding: 5rem 0;
+  min-width: 320px;
+  height: auto;
 }
 
-.about__introduccion {
+.about__title {
+  width: 70%;
+  min-width: 288px;
+  max-width: 330px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
   text-align: center;
-  padding: 0 1.5rem;
 }
 
-.about__introduccion-title {
-  font-size: 2.5rem;
-  padding: 0 3.5rem;
-  margin-bottom: 2rem;
+.about__title h2 {
+  margin-bottom: 20px;
+  font-size: 2.7rem;
+  color: var(--dark-Blue);
 }
 
-.about__list {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 4rem 0;
-}
-
-.about__list-title h3 {
+.about__title p {
+  margin-bottom: 20px;
   font-size: 1.4rem;
-}
-
-.about__list-card {
-  margin-bottom: 4rem;
-}
-
-.about__list-description {
-  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 27px;
   color: var(--dark-Grayish-Blue);
-  line-height: 2.5rem;
+}
+
+.about-detail__card {
+  width: 100%;
+  min-width: 28px;
+  max-width: 420px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-left: 15px;
+}
+
+.about-detail__card .about-detail__header {
+  height: 40px;
+  margin-bottom: 13px;
+  display: flex;
+  background-color: var(--very-Pale-Red);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.about-detail__header .about__card-number {
+  width: 65px;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--brightRed);
+  color: white;
+}
+
+.about-detail__header .about__card-title {
+  padding: 7px 0 7px 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--dark-Blue);
+}
+
+.about-detail__card .about-detail__body {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--dark-Grayish-Blue);
 }
 
 @media only screen and (min-width: 768px) {
-  .about {
-    display: flex;
+  .about__title h2 {
+    font-size: 5rem;
   }
 
-  .about__introduccion {
-    width: 44%;
+  .about__title p {
+    font-size: 2.4rem;
+    line-height: 40px;
+  }
+
+  .about-detail__card {
+    padding-left: 45px;
+  }
+
+  .about-detail__header .about__card-number {
+    font-size: 1.7rem;
+  }
+
+  .about-detail__header .about__card-title {
+    font-size: 1.6rem;
+  }
+
+  .about-detail__card .about-detail__body {
+    font-size: 1.6rem;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+  }
+
+  .about__title {
+    margin-left: 0;
+    margin-right: 0;
     text-align: left;
   }
 
-  .about__introduccion-title {
-    padding: 0 10rem;
+  .about__title h2 {
+    font-size: 3rem;
   }
 
-  .about__introduccion-text {
-    padding: 0 10rem;
+  .about__title p {
+    font-size: 1.6rem;
+    line-height: 30px;
   }
 
-  .about__list {
-    width: 50%;
-    margin: 0;
+  .about-detail__card .about-detail__header {
+    background-color: transparent;
   }
 
-  .about__list-title {
-    background-color: initial;
-    border-radius: initial;
-    border: none;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .about__list-title h3 {
-    margin-left: -10rem;
-  }
-
-  .about__list-description {
-    padding-left: 24rem;
+  .about-detail__card .about-detail__body {
+    padding-left: 75px;
+    font-size: 1.4rem;
   }
 }

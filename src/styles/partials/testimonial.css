@@ -43,19 +43,6 @@
   background-repeat: no-repeat;
 }
 
-.testimonials__card-peopleAnisha {
-  background-image: url("https://i.imgur.com/GI0Ywsv.png");
-}
-.testimonials__card-peopleAli {
-  background-image: url("https://i.imgur.com/iocLYP0.png");
-}
-.testimonials__card-peopleRichard {
-  background-image: url("https://i.imgur.com/6INGpCy.png");
-}
-.testimonials__card-peopleShanai {
-  background-image: url("https://i.imgur.com/tZkf3Nd.png");
-}
-
 .testimonials__card-info {
   height: 200px;
   margin: 0 auto;

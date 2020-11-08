@@ -27,19 +27,16 @@ const swiper = new Swiper(".swiper-container", {
   breakpoints: {
     1024: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 0,
     },
-    //   640: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 20,
-    //   },
+
     320: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 50,
     },
   },
 });

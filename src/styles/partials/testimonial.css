@@ -24,8 +24,8 @@
 
 .testimonials__container-card {
   position: relative;
-  width: 280px;
-  max-width: 600px;
+  width: 290px;
+  max-width: 225px;
   height: 200px;
   margin: 0 auto;
   margin-top: 70px;
@@ -57,10 +57,9 @@
 }
 
 .testimonials__card-info {
-  width: 280px;
-  height: auto;
+  height: 200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
   padding-top: 40px;
 }
 

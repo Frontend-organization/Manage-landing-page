@@ -17,7 +17,6 @@ const swiper = new Swiper(".swiper-container", {
   },
   paginationClickable: true,
   slidesPerView: 4,
-  allowTouchMove: true,
   spaceBetween: 50,
 
   // And if we need scrollbar
@@ -28,6 +27,7 @@ const swiper = new Swiper(".swiper-container", {
     1024: {
       slidesPerView: 4,
       spaceBetween: 10,
+      allowTouchMove: false,
     },
     768: {
       slidesPerView: 2,

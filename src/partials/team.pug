@@ -1,0 +1,13 @@
+include ../components/button.pug
+
+- const teamImageMobile = require("@/assets/images/bg-simplify-section-mobile.svg");
+- const teamImageDesktop = require("@/assets/images/bg-simplify-section-desktop.svg");
+
+section.team
+  figure.team__background
+    img(src=teamImageMobile, alt="team-bg").bg-mobile
+    img(src=teamImageDesktop, alt="team-bg").bg-desktop
+  div.team__body
+    div.team__body-title
+      h2 Simplify how your team works today.
+    +button('Get started','secondary')

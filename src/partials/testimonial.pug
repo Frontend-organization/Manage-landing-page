@@ -1,3 +1,5 @@
+include ../components/button.pug
+
 - var anisha = require('@/assets/images/avatar-anisha.png');
 - var ali = require('@/assets/images/avatar-ali.png');
 - var richard = require('@/assets/images/avatar-richard.png');
@@ -34,3 +36,4 @@ section.testimonials
             p.testimonials__card-body "Theirsoftware  allows  us   to  track,manageand  collaborate on our  projects from     anywhere. It keeps thewholeteam  in-sync   without being  intrusive"
     //- <!-- If we need pagination -->
     div.swiper-pagination
+  +button('Get Started', 'primary')

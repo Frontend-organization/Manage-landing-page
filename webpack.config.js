@@ -17,7 +17,7 @@ module.exports = ({ mode = "production" }) => {
         app: path.resolve(__dirname, "src", "app.js"),
       },
       output: {
-        filename: "[contentHash].bundle.js",
+        filename: "[hash].bundle.js",
         path: path.resolve(__dirname, "dist"),
         publicPath: "/",
       },
@@ -42,6 +42,13 @@ module.exports = ({ mode = "production" }) => {
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
           template: path.resolve(__dirname, "src", "index.pug"),
+          favicon: path.resolve(
+            __dirname,
+            "src",
+            "assets",
+            "images",
+            "favicon-32x32.png"
+          ),
         }),
         new MiniCssExtractPlugin({
           filename: "styles/bundle.[hash].css",
